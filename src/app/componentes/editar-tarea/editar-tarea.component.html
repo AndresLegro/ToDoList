@@ -1,0 +1,56 @@
+<div class="card">
+    <div class="card-header">
+        Editar tarea
+    </div>
+    <div class="card-body">
+        <form (ngSubmit) = "enviarDatos()" [formGroup] = "formularioDeTareas">
+
+            <div class="mb-3">
+                <label for="" class="form-label">ID: </label>
+                <input type="text" class="form-control" name="" id="" formControlName="id" aria-describedby="helpId" placeholder="" readonly> 
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Titulo: </label>
+                <input type="text" class="form-control" name="" id="" formControlName="titulo" aria-describedby="helpId" placeholder="">
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Descripcion: </label>
+                <input type="text" class="form-control" name="" id="" formControlName="descripcion" aria-describedby="helpId" placeholder="">
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Usuario: </label>
+                <input type="text" class="form-control" name="" id="" formControlName="usuario" aria-describedby="helpId" placeholder="">
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Estimacion: </label>
+                <input type="number" class="form-control" name="" id="" formControlName="estimacion" aria-describedby="helpId" placeholder="">
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Prioridad: </label>
+                <input type="text" class="form-control" name="" id="" formControlName="prioridad" aria-describedby="helpId" placeholder="">
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Criterio de Aceptacion: </label>
+                <input type="text" class="form-control" name="" id="" formControlName="criterioAceptacion" aria-describedby="helpId" placeholder="">
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Estado: </label>
+                <input type="text" class="form-control" name="" id="" formControlName="estado" aria-describedby="helpId" placeholder="">
+            </div>
+
+
+
+            <button class="btn btn-success" type="submit">Editar</button> &nbsp;
+            <button class="btn btn-danger" routerLink="/listar-tarea" type="button">Cancelar</button>
+        </form>
+    </div>
+    
+</div>
+

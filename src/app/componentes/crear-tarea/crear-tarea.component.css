@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.card-body{
+
+    font-family: 'Times New Roman', Times, serif;
+    align-content: center;
+    
+}
+
+.card-header{
+    font-family: 'Times New Roman', Times, serif;
+    
+}

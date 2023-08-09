@@ -1,0 +1,45 @@
+<div class="card">
+
+    <div class="card-header">
+        Lista de Tareas
+    </div>
+
+    <div class="card-body">
+        
+        <div class="table-responsive">
+
+            <table class="table table-primary">
+                <thead>
+                    <br>
+                    <tr>
+                        <th scope="col">ID:</th>
+                        <th scope="col">Titulo:</th>
+                        <th scope="col">Usuario:</th>
+                        <th scope="col">Estimacion:</th>
+                        <th scope="col">Prioridad:</th>
+                        <th scope="col">Acciones:</th>
+
+                    </tr>
+
+                </thead>
+                <tbody>
+
+                    <tr *ngFor = "let tarea of tareas ; let iControl = index">
+                        <td scope="row">{{tarea.id}}</td>
+                        <td>{{tarea.titulo}}</td>
+                        <td>{{tarea.usuario}}</td>
+                        <td>{{tarea.estimacion}}</td>
+                        <td>{{tarea.prioridad}}</td>
+                        <td>
+                            <a class="btn btn-warning" routerLink="/editar-tarea/{{tarea.id}}" class="btn btn-warning">Editar</a>&nbsp;
+                            <a class="btn btn-danger" (click)="borrarTarea(tarea.id , iControl)" role="button">Eliminar</a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <a class="btn btn-info" routerLink="/agregar-tarea" >Agregar una nueva tarea</a>
+ 
+    </div>
+</div>

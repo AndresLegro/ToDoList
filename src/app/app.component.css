@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding: 16px; 
+}
+
+a{
+    color: black;
+    background-color: aliceblue;
+}
+/*
+.card-header{
+    text-align: center;
+}
+
+.main-header
+{
+
+    background-image: url('../assets/img/hello.jpeg');
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+*/
